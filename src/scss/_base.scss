@@ -1,0 +1,46 @@
+/* Variables */
+$font-family: "Roboto", Helvetica, sans-serif;
+$font-weight: 300;
+$font-size: 1rem;
+$font-size-medium: 1.4rem;
+$font-size-big: 2.4rem;
+
+$primary-color: #a76158;
+$text-color-primary: #fff;
+$text-color-secondary: #000;
+$border-color: #f3ecf3;
+$outline-color: #804d46;
+$background-color: #fff;
+$background-color-hover: #f8e7e2;
+
+$background-image: url("../img/planet.png");
+
+/* Normalize */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-weight: inherit;
+  margin: 0;
+}
+
+input {
+  font-family: inherit;
+  border: none;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Mixin(s) */
+@mixin transition($property, $duration, $timing) {
+  transition: $property $duration $timing;
+}
